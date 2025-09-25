@@ -5,14 +5,14 @@ const userSchema = object({
   age: number(),
   email: string(),
 });
-
-const validData = {
+// Pretend this data comes from an API and we can't guarantee the types.
+const validData: unknown = {
   name: "John Doe",
   age: 30,
   email: "john@example.com",
 };
 
-const invalidData = {
+const invalidData: unknown = {
   name: "Jane Doe",
   age: "not a number",
   email: "jane@example.com",
