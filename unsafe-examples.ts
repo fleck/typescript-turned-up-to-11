@@ -8,7 +8,7 @@ function exampleUnsafeReturn(userInput?: any) {
   return userInput.name.last;
 }
 
-console.log(exampleUnsafeCall());
+console.log(exampleUnsafeReturn());
 
 const notMeantForString = { name: "tim" };
 
